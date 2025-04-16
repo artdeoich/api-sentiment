@@ -2,3 +2,4 @@ flask
 mlflow
 scikit-learn
 pandas
+pytest
