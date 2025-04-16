@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # 🔁 Charger le modèle MLflow depuis un run
 # Remplace <run_id> par l’ID du run où tu as loggé ton modèle
-model_uri = "runs:/<run_id>/model"  # exemple : runs:/8a123abcde4567890/model
-model = mlflow.sklearn.load_model(model_uri)
+model_path = "model/781887167403503729/8b59587d094044508ec10e06a24efb74/artifacts/model"
+model = mlflow.sklearn.load_model(model_path)
 
 @app.route("/")
 def home():
